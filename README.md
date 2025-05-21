@@ -61,7 +61,7 @@ Step 5: For different input combinations generate the timing diagram.
 **Program:**
 
 **Full Adder**
-
+```
    module full_adder (A, B, Cin, Sum, Carry); 
    input A, B, Cin;
    output Sum, Carry;
@@ -76,9 +76,9 @@ Step 5: For different input combinations generate the timing diagram.
    and (ACin, A, Cin);          
    or (Carry, AB, BCin, ACin);  
    endmodule
-
+```
    **Full Subtractor**
-
+```
   
   module full_subtractor (A, B, Bin, Diff, Borrow);
   input A, B, Bin;
@@ -95,7 +95,7 @@ Step 5: For different input combinations generate the timing diagram.
   and (B_and_Bin, B, Bin);         
   or (Borrow, A_not_and_B, A_not_and_Bin, B_and_Bin); 
   endmodule
-
+```
 
 **RTL Schematic**
 
